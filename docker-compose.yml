@@ -1,0 +1,16 @@
+version: '3'
+
+volumes:
+  node_modules_volume:
+
+services:
+  app:
+    image: node:18
+    ports:
+      - 3011:3011
+    volumes:
+      - .:/workspace:cached
+      - node_modules_volume:/workspace/node_modules
+    working_dir: /workspace
+    container_name: nextjs-reactquery-sandbox
+    command: /bin/sh -c "while sleep 1000; do :; done"

@@ -1,0 +1,10 @@
+{
+    "name": "nextjs-reactquery-sandbox",
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+    "service": "app",
+    "workspaceFolder": "/workspace",
+    "settings": {},
+    "extensions": []
+}
